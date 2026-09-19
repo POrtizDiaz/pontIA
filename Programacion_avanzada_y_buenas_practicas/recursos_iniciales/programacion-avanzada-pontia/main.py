@@ -1,6 +1,6 @@
-def main():
-    print("Hello from programacion-avanzada-pontia!")
+def saludar(nombre):
+    mensaje = "Hola, " + nombre
+    print(mensaje)
 
 
-if __name__ == "__main__":
-    main()
+saludar("Mundo")
