@@ -3,7 +3,7 @@ order_id,date,status,amount
 1002,2026-08-02,paid,22.40
 1003,2026-08-03,paid,24.90
 1004,2026-08-04,shipped,27.40
-842
+843 data/orders.csv
 43:1042,2026-08-09,cancelled,37.40
     140 cancelled
     422 paid

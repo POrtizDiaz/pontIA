@@ -1,0 +1,10 @@
+RESUMEN DE ERRORES
+      1 ERROR component=loader reason=malformed_amount order_id=1042
+      2 ERROR component=warehouse reason=connection_timeout
+
+TOTAL
+3
+
+PROCESAMIENTO
+Procesados: 842 registros
+Salida: output/summary.csv

@@ -1,0 +1,11 @@
+RESUMEN DEL LOG
+ERRORS = 3
+WARNINGS = 3
+MENSAJES ERROR
+ERROR component=loader reason=malformed_amount order_id=1042
+ERROR component=warehouse reason=connection_timeout
+ERROR component=warehouse reason=connection_timeout
+MENSAJES WARNINGS
+2026-08-11T02:00:02Z WARNING component=validator reason=late_arrival order_id=1017
+2026-08-11T02:00:09Z WARNING component=validator reason=duplicate_candidate order_id=1031
+2026-08-11T02:00:14Z INFO pipeline_finished processed=842 rejected=1 status=completed_with_warnings

@@ -1,0 +1,5 @@
+status,orders,total_amount
+cancelled,140,5561.00
+paid,422,16767.80
+refunded,140,5593.50
+shipped,140,5583.50

@@ -1,0 +1,3 @@
+output/final/manifest.txt	0 bytes
+output/final/errors.txt	148 bytes
+output/final/report.txt	225 bytes
