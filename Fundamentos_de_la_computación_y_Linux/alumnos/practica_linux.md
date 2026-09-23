@@ -241,11 +241,17 @@ Utiliza las herramientas `find` y `du` para generar dos archivos de diagnóstico
 
 ### Comando ejecutado:
 ```bash
-# Escribe aquí los comandos ejecutados
+1. (echo "ARCHIVOS TXT"; echo "$(find . -name "*.txt" | sort)"; echo "ARCHIVOS CSV"; echo "(find . -name "*.csv" | sort)";) > output/artifacts.txt
+
+2. du -sh data/ logs/ output/ > output/disk_usage.txt
 ```
 
 ### Captura demostrativa:
-![Captura Ejercicio 10](ruta/a/tu/imagen_ejercicio10.png)
+1. 
+![Captura Ejercicio 10](img/ej_10/doc1.png)
+
+2. 
+![Captura Ejercicio 10](img/ej_10/doc2.png)
 
 ---
 
@@ -257,11 +263,14 @@ Utiliza las herramientas `find` y `du` para generar dos archivos de diagnóstico
 
 ### Comando ejecutado:
 ```bash
-# Escribe aquí los comandos ejecutados
+1. tar -czf output/entrega.tar.gz -C output/final .
+
+2. tar -tzvf output/entrega.tar.gz > output/archive_contents.txt
+
 ```
 
 ### Captura demostrativa:
-![Captura Ejercicio 11](ruta/a/tu/imagen_ejercicio11.png)
+![Captura Ejercicio 11](img/ej_11/comando.png)
 
 ---
 
@@ -275,11 +284,24 @@ Utiliza las herramientas `find` y `du` para generar dos archivos de diagnóstico
 
 ### Comando ejecutado:
 ```bash
-# Escribe aquí los comandos ejecutados
+1. 
+mkdir -p output/sandbox
+touch output/sandbox/{a.tmp,b.tmp,conservar.txt}
+
+2. find output/sandbox -name "*.tmp" | cut -d"/" -f3
+
+3. 
+rm output/sandbox/*.tmp
+find output/sandbox -name "*.tmp" | cut -d"/" -f3
+
+4.
+rm -rf output/sandbox/
+find . -path "./output/sandbox"
+
 ```
 
 ### Captura demostrativa:
-![Captura Ejercicio 12](ruta/a/tu/imagen_ejercicio12.png)
+![Captura Ejercicio 12](img/ej_12/comando.png)
 
 
 

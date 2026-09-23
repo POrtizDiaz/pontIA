@@ -1,0 +1,3 @@
+28K	data/
+12K	logs/
+96K	output/

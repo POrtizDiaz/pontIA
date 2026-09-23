@@ -1,0 +1,4 @@
+drwxrwxr-x peordi/peordi     0 2026-09-21 21:30 ./
+-rw-rw-r-- peordi/peordi   102 2026-09-21 21:30 ./manifest.txt
+-rw-rw-r-- peordi/peordi   148 2026-09-21 21:22 ./errors.txt
+-rw-rw-r-- peordi/peordi   225 2026-09-21 21:18 ./report.txt

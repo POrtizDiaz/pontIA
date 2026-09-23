@@ -1,0 +1,18 @@
+ARCHIVOS TXT
+./logs/resumen_logs.txt
+./output/artifacts.txt
+./output/disk_usage.txt
+./output/errors.txt
+./output/final/errors.txt
+./output/final/manifest.txt
+./output/final/report.txt
+./output/log_errors.txt
+./output/report.txt
+./output/run.txt
+./output/status_counts.txt
+./temp.txt
+ARCHIVOS CSV
+./data/orders.csv
+./output/entrega/orders_backup.csv
+./output/entrega/orders_original.csv
+./output/summary.csv
