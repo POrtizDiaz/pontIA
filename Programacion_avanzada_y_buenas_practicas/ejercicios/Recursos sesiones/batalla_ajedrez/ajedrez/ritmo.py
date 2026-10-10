@@ -1,8 +1,11 @@
+from dataclasses import dataclass
+
+
+@dataclass(frozen=True)
 class Ritmo:
-    def __init__(self, nombre, k, tiempo):
-        self.nombre = nombre
-        self.k = k
-        self.tiempo = tiempo
+    nombre: str
+    k: int
+    tiempo: str
 
     def describir(self):
         return f"{self.nombre}, {self.tiempo}"

@@ -5,13 +5,28 @@ class Jugador:
     def __init__(self, nombre, pais):
         self.nombre = nombre
         self.pais = pais
-        self.elo = Jugador.ELO_INICIAL
+        self._elo = Jugador.ELO_INICIAL
         self.victorias = 0
         self.derrotas = 0
         self.tablas = 0
         self.historial = []
         Jugador.total_registrados += 1
 
+    # --- Data model -------------------------------------------------
+    def __repr__(self):
+        return f"Jugador({self.nombre!r}, {self.pais!r}, elo={self.elo})"
+
+    def __str__(self):
+        return (
+            f"{self.nombre:<8} ({self.pais})  ELO {self.elo}  "
+            f"| {self.victorias}V {self.derrotas}D {self.tablas}T "
+            f"| {self.porcentaje_victorias:.0f}% victorias"
+        )
+
+    def __lt__(self, otro):
+        return self.elo < otro.elo
+
+    # --- Lógica del ELO ----------------------------------------------
     @staticmethod
     def variacion_elo(puntos, k):
         if puntos == 1:
@@ -22,11 +37,14 @@ class Jugador:
             return 0
 
     def actualizar_elo(self, puntos, k):
-        self.elo += self.variacion_elo(puntos, k)
+        self._elo += self.variacion_elo(puntos, k)
 
+    # --- Estadísticas ------------------------------------------------
+    @property
     def partidas_jugadas(self):
         return self.victorias + self.derrotas + self.tablas
 
+    @property
     def porcentaje_victorias(self):
         total = self.partidas_jugadas()
         return 100 * self.victorias / total if total else 0.0
@@ -38,10 +56,7 @@ class Jugador:
             self.derrotas += 1
         else:
             self.tablas += 1
-
-    def resumen(self):
-        return (
-            f"{self.nombre:<8} ({self.pais})  ELO {self.elo}  "
-            f"| {self.victorias}V {self.derrotas}D {self.tablas}T "
-            f"| {self.porcentaje_victorias():.0f}% victorias"
-        )
+    
+    @property        
+    def elo(self):
+        return self._elo

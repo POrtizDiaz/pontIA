@@ -1,0 +1,52 @@
+{
+  "jugadores": [
+    {
+      "nombre": "Magnus",
+      "pais": "NOR",
+      "elo": 2850,
+      "victorias": 41,
+      "derrotas": 5,
+      "tablas": 26
+    },
+    {
+      "nombre": "Alireza",
+      "pais": "FRA",
+      "elo": 2790,
+      "victorias": 34,
+      "derrotas": 14,
+      "tablas": 18
+    },
+    {
+      "nombre": "Hikaru",
+      "pais": "USA",
+      "elo": 2770,
+      "victorias": 35,
+      "derrotas": 11,
+      "tablas": 20
+    },
+    {
+      "nombre": "Ding",
+      "pais": "CHN",
+      "elo": 2760,
+      "victorias": 28,
+      "derrotas": 12,
+      "tablas": 31
+    },
+    {
+      "nombre": "Anish",
+      "pais": "NED",
+      "elo": 2745,
+      "victorias": 20,
+      "derrotas": 8,
+      "tablas": 43
+    },
+    {
+      "nombre": "Judit",
+      "pais": "HUN",
+      "elo": 2695,
+      "victorias": 30,
+      "derrotas": 16,
+      "tablas": 16
+    }
+  ]
+}
